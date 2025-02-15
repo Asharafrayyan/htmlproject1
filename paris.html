@@ -1,4 +1,4 @@
-<html></html>
+<html>
     <head>
         <title>
 
@@ -22,421 +22,592 @@
             padding-top: 10px;
             margin-left: 20px;
           }
-          nav{
-            background-color: rgb(6, 7, 8);
-            color: white;
-            height: 90px;
-            position: fixed;
-            width:100%;
-          }
+          /* Tourist Section Styling */
+.tourist-section {
+  text-align: center;
+  margin: 30px 0;
+  color: white;
+}
 
-          .img ,.lists,.list-item ,.heading{
-            display: inline-block;
-          }
-          .lists{
-            
-            margin-left: 700px;
-            margin-top: -24px;
-            
-          }
-          .list-item{   
-            margin-right:10px;
-            font-size: 20px;
-            vertical-align: bottom;
-          }
-          .a1{
-            color: white;
-            text-decoration: none;
-          }
-          .a2{
-            color: black;
-            text-decoration: none;
-          }
-          .img{
-            margin-top: 10px;
-            border-radius: 10px;
-            padding-left:5px;
-            vertical-align: bottom;
-          }
-          
-       
-          .nav1{
-            background-color: black;
-            color: white;
-            height: 200px;
-           
-          } 
-          .footer{
-            display: inline-block;
-            padding: 50px;
-            list-style-type: none;
-            text-align: justify;
-          }
+.tourist-section h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tourist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.tourist {
+  text-align: center;
+  width: 150px;
+}
+
+.tourist img {
+  height: 100px;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.tourist img:hover {
+  transform: scale(1.1);
+}
+
+.tourist p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tourist-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tourist-container {
+    gap: 15px;
+  }
+  .tourist {
+    width: 130px;
+  }
+  .tourist-section h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tourist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tourist {
+    width: 100%;
+  }
+  .tourist img {
+    width: 80px;
+    height: 80px;
+  }
+  .tourist-section h2 {
+    font-size: 25px;
+  }
+}
+/* \end{code} */
+
+
+    /* /nav :start */
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 30px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ff9800;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: ruby;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+/* end nav */
           /* .bg1{
             background-image: url("image/4.jpg");
             background-size: cover;
             height: 120vh;
           } */
-       
-          .rate{
-            color: white;
-            background-color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 100px;
-            display: flex;
-          }
-          .a1:hover{
-            color: gray;
-          }
-          .a2:hover{
-            color: rgb(243, 238, 238);
-          }
-          .img2{
-           font-size: 70px;
-           margin-left: 100px;
-          }
-          .p{
-            font-size: 20px;
-            color: black;
-            margin-bottom: 10px;
-          }
-     
-    
-    .a1{
-      color: white;
-      text-decoration: none;
-    }
-    .img{
-      margin-top: 10px;
-      border-radius: 5px;
-      padding-left:5px;
-      vertical-align: bottom;
-      
-    }
-    /* .bg1{
-          background-image: url("image/4.jpg");
-          height: 200vh;
-          background-size: cover;
-    } */
-    .div1{
-      height:750px;
-      width: 400px;
-      background-color: white;
-       margin-top: 100px;
-       margin-left:35px;
-
-    }
-    .div1:hover{
-      background-color: gray;
-      transform: scale();
-    }
-  
-    .button1{
-          height: 40px;
-          width: 150px;
-          background-color: black;
-          color:white;
-          transition: 0.10ms;
-          border:none;
-          border-radius: 20px;
-          font-size: 15px;
-          font-weight: bold;
-          margin-top: 20px;
-          margin-left: 33px;
-        }
-          .p{ 
-         font-size: 15px;
-          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-          text-align: justify;
-          text-indent: 50px;
-          padding: 20px;
-        }
-       
-        .button1:hover{
-          background-color: gray;
-        }
-        .a1:hover{
-          color: gray;
-        }
-        .button2{
-          margin-right: 20px;
-          margin-top: 100px;
-        }
-        .a2{
-          color: black;
           
-        }
-        .icon{
-        
-          margin: 10px;
+               /* footer department */
+               .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
 
-        }
-        .icon1{
-          margin-left: 10px;
-        }
+.footer {
+  width: 20%;
+  margin: 10px;
+}
+
+.footer h5 {
+  color: gray;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer p, .footer li {
+  font-size: 14px;
+  list-style: none;
+  color: white;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: lightgray;
+}
+
+/* Social Media Icons */
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bottom Rate Section */
+.rate {
+  text-align: center;
+  padding: 10px;
+  background: #111;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 80%;
+    text-align: center;
+  }
+
+  .footer ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
+
+  .rate p {
+    font-size: 12px;
+  }
+}
+/* \end{code} */
+   /* card department */
+   /* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.bg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Flex container for travel packages */
+.travel-container {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+/* Individual package box */
+.div1 {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.div1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Package Features */
+.icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.icon p {
+  font-size: 14px;
+}
+
+/* Pricing Section */
+.price-info {
+  text-align: left;
+  padding: 10px;
+}
+
+.price-info p {
+  margin: 5px 0;
+}
+
+/* Buttons */
+.button1 {
+  background: #635f5a;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 48%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button1:hover {
+  background: #e68900;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .div1 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div1 {
+    width: 90%;
+  }
+
+  .icon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button1 {
+    width: 100%;
+    
+  }
+}
+/* end card */
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
         
-      <nav>
-        <img src="image/travel.avif" alt="" height="40" width="50" class="img">
-        <h1 class="heading">HUNTER TOURIST</h1>
-      
-        <ul class="lists">
-            <li class="list-item"><span><i class="fa-solid fa-house" style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="index.html" class="a1">HOME</a></span></li>
-            <li class="list-item"><i class="fa-solid fa-person"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlabout.html" class="a1">ABOUT US</a></li>
-            <li class="list-item"><i class="fa-solid fa-globe"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlvisiting.html" class="a1">TOP PLACES</a></li>
-            <li class="list-item"><i class="fa-solid fa-phone"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlcontact.html" class="a1">CONTACT US</a></li>
+      <nav class="navbar">
+        <div class="nav-left">
+          <img src="image/travel.avif" alt="Logo" class="nav-logo">
+          <h1 class="nav-title">HUNTER TOURIST</h1>
+        </div>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><i class="fa-solid fa-house"></i><a href="index.html">HOME</a></li>
+          <li class="nav-item"><i class="fa-solid fa-person"></i><a href="htmlabout.html">ABOUT US</a></li>
+          <li class="nav-item"><i class="fa-solid fa-globe"></i><a href="htmlvisiting.html">TOP PLACES</a></li>
+          <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="htmlcontact.html">CONTACT US</a></li>
         </ul>
-    
-  </nav>
-        <div class="bg1">
-          <br><br><br><br>
-          <br>
-          
-             
-               <center>
-                <p style="color:white; text-align: center; font-size: 40PX; font-family: A rial, Helvetica, sans-serif; font-weight: 800; margin-top: 30px;"><i class="fa-solid fa-icons " style="color: rgb(48, 77, 117);"></i>&nbsp;&nbsp;&nbsp;FAMOUS TOURIST ATTRACTION&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-icons" style="color: rgb(55, 60, 129);"></i></p>
-                <br>
-               <div style="display: flex; " class="">
-                <div style="margin-left: 140px;">
-                  <a href="lakshadweep.html" class="a2">
-                  <img src="image/lakshadweep.svg" alt="" height="100px" width="100px">
-                  <p>LAKSHADWEEP
-                   </p></a>
-                </div>
-                <div style="margin-left: 140px;">
-                  <a href="andaman.html" class="a2">
-                  <img src="image/andaman-new.png" alt="" height="100px" width="100px">
-                  <p>ANDAMAN
-                   </p></a>
-                </div>
-                <div style="margin-left: 140px;">
-                  <a href="kashmir.html" class="a2">
-                  <img src="image/kashmir.svg" alt="" height="100px" width="100px">
-                  <p>KASHMIR
-                   </p></a>
-                </div>
-                <div style="margin-left: 140px;">
-                  <a href="jaipur.html" class="a2">
-                  <img src="image/jaipur.svg" alt="" height="100px" width="100px">
-                  <p>JAIPUR
-                   </p></a>
-                </div>
-                <div style="margin-left: 140px;">
-                  <a href="bangalore.html" class="a2">
-                  <img src="image/bangalore.svg" alt="" height="100px" width="100px">
-                  <p>BANGALORE
-                   </p></a>
-                </div>
-               </div>
-              </center>
-              <center>
-                <div style="display: flex; margin-bottom: 20px; ">
-                 <div style="margin-left: 150px;">
-                   <a href="paris.html" class="a2">
-                   <img src="image/paris.svg" alt="" height="100px" width="100px">
-                   <p>PARIS
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 150px;">
-                   <a href="leh.html" class="a2">
-                   <img src="image/leh.svg" alt="" height="100px" width="100px">
-                   <p>LEH
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 150px;">
-                   <a href="bali.html" class="a2">
-                   <img src="image/bali-indonesia.svg" alt="" height="100px" width="100px">
-                   <p>BALI
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 130px;">
-                   <a href="dubai.html" class="a2">
-                   <img src="image/dubai.svg" alt="" height="100px" width="100px">
-                   <p>DUBAI
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 130px;">
-                   <a href="kerala.html" class="a2">
-                   <img src="image/kerala.svg" alt="" height="100px" width="100px">
-                   <p>KERALA
-                    </p></a>
-                 </div>
-                </div>
-               </center>
-          </div>
-          <center>
-            <p style="color:white; text-align: center; font-size: 40PX; font-family: A rial, Helvetica, sans-serif; font-weight: 800; margin-top:30px;  "><i class="fa-solid fa-icons " style="color: rgb(244, 245, 247);"></i>&nbsp;&nbsp;&nbsp;PARIS HOLIDAY PACKAGES&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-icons" style="color: rgb(248, 248, 250);"></i></p>
-            <div style="display: flex;">
-          <div class="div1">
-            <center>
-                <img src="image/tour1.jpg" alt="taj mahal" height="250px" width="400px" class="">
-                 <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></h2></center><br><br>
-                 <h2>Grand Wonders Of Europe</h2><br>
-                 <P class="p">2N London| 3N Paris | 1N Netherlands | 1N Germany | 3N Central Switzerland | 1N Innsbruck | 1N Padova | 1N Tuscany | 1N Rome
-                </P><br><br>
-                
-              </center>
-              <div style="margin-top: -30px;">
-              <hr>
-              <div style="display: flex;" class="icon">
-                <i class="fa-solid fa-hotel icon1"></i>
-                <p style="margin-left: 4px;">HOTEL</p>
-                <i class="fa-solid fa-binoculars icon1 "></i>
-                <p style="margin-left: 4px;">SITESEEING</p>
-                <i class="fa-solid fa-car icon1"></i>
-                <p style="margin-left: 4px;">TRANFER</p>
-                <i class="fa-solid fa-bowl-food icon1"></i>
-                <p style="margin-left: 4px;">MEALS</p>
-              </div>
-              <br>
-                <hr>
-                <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-                <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-                <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-                <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-                <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                 <br><hr>
-                 <div style="display: flex;">
-                  <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-                  <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
-                </div>
-             </div>  
-             </div>  
-             <div class="div1">
-              <center>
-                <img src="image/tour2.jpg" alt="new york city" height="250px" width="400px" class="">
-                 <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></h2></center><br><br>
-                 <h2>Fascinating Europe</h2><br>
-                 <P class="p">3N Paris | 3N Switzerland | 1N Innsbruck |1N Munich
-                </P><br> <br>
-                
-              </center>
-              <div style="margin-top: 0;">
-              <hr>
-              <div style="display: flex;" class="icon">
-                <i class="fa-solid fa-hotel icon1"></i>
-                <p style="margin-left: 4px;">HOTEL</p>
-                <i class="fa-solid fa-binoculars icon1 "></i>
-                <p style="margin-left: 4px;">SITESEEING</p>
-                <i class="fa-solid fa-car icon1"></i>
-                <p style="margin-left: 4px;">TRANFER</p>
-                <i class="fa-solid fa-bowl-food icon1"></i>
-                <p style="margin-left: 4px;">MEALS</p>
-              </div>
-              <br>
-                <hr>
-                <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-                <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-                <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-                <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-                <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                 <br><hr>
-                 <div style="display: flex;">
-                <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-                <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
-              </div>
-             </div> 
-            </div>
-             <div class="div1">
-              <center>
-                <img src="image/tour3.jpg" alt="great wall of chaina" height="250px" width="400px" class="">
-                 <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></h2></center><br><br>
-                 <h2>Imperial Europe</h2><br>
-                 <P class="p">3N Paris | 3N Switzerland | 1N Innsbruck | 1N Padova | 1N Tuscany | 1N Rome
-                </P><br><br>
-                  <br><br>
-                
-              </center>
-              <div style="margin-top: -50px;">
-              <hr>
-              <div style="display: flex;" class="icon">
-                <i class="fa-solid fa-hotel icon1"></i>
-                <p style="margin-left: 4px;">HOTEL</p>
-                <i class="fa-solid fa-binoculars icon1 "></i>
-                <p style="margin-left: 4px;">SITESEEING</p>
-                <i class="fa-solid fa-car icon1"></i>
-                <p style="margin-left: 4px;">TRANFER</p>
-                <i class="fa-solid fa-bowl-food icon1"></i>
-                <p style="margin-left: 4px;">MEALS</p>
-              </div>
-              <br>
-                <hr>
-                <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-                <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-                <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-                <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-                <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                <br> <hr>
-                <div style="display: flex;">
-                  <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-                  <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
-                </div>
-             </div> 
-             </div>
-            </div> 
-            <a href="htmlvisiting2.html"><button class="button1" style="margin-bottom: 20px;">next page<i class="fa-solid fa-arrow-right"></i></button></a>
-          </center>
+      
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+  <div class="tourist-section" style="padding-top: 20px;">
+    <h2><i class="fa-solid fa-icons"></i> FAMOUS TOURIST ATTRACTIONS <i class="fa-solid fa-icons"></i></h2>
+  
+    <div class="tourist-container">
+      <div class="tourist">
+        <a href="lakshadweep.html"><img src="image/lakshadweep.svg"  alt="Lakshadweep"><p>LAKSHADWEEP</p></a>
+      </div>
+      <div class="tourist">
+        <a href="andaman.html"><img src="image/andaman-new.png" style="height: 100px; width: 100px;" alt="Andaman"><p>ANDAMAN</p></a>
+      </div>
+      <div class="tourist">
+        <a href="kashmir.html"><img src="image/kashmir.svg" style="height: 100px; width: 100px;" alt="Kashmir"><p>KASHMIR</p></a>
+      </div>
+      <div class="tourist">
+        <a href="jaipur.html"><img src="image/jaipur.svg" alt="Jaipur"><p>JAIPUR</p></a>
+      </div>
+      <div class="tourist">
+        <a href="bangalore.html"><img src="image/bangalore.svg" alt="Bangalore"><p>BANGALORE</p></a>
+      </div>
+      <div class="tourist">
+        <a href="paris.html"><img src="image/paris.svg" alt="Paris"><p>PARIS</p></a>
+      </div>
+      <div class="tourist">
+        <a href="leh.html"><img src="image/leh.svg" alt="Leh"><p>LEH</p></a>
+      </div>
+      <div class="tourist">
+        <a href="bali.html"><img src="image/bali-indonesia.svg" alt="Bali"><p>BALI</p></a>
+      </div>
+      <div class="tourist">
+        <a href="dubai.html"><img src="image/dubai.svg" alt="Dubai"><p>DUBAI</p></a>
+      </div>
+      <div class="tourist">
+        <a href="kerala.html"><img src="image/kerala.svg" alt="Kerala"><p>KERALA</p></a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="bg1">
+  <div class="travel-container">
+    <!-- South Africa Package -->
+    <div class="div1">
+      <img src="image/tour1.jpg" alt="South Africa">
+      <h2>Paris</h2>
+      <h3>Best of Paris with Mauritius GD</h3>
+      <p>1N Johannesburg | 1N Sun City | 1N Mabula Game Reserve | 3N Mossel Bay | 4N Cape Town | 3N Mauritius</p>
+      
+      <hr>
+      <div class="icon">
+        <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+        <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+        <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+        <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
+      </div>
+      <hr>
+
+      <div class="price-info">
+        <p><strong>Starting from:</strong></p>
+        <p style="text-decoration: line-through;">$34,999</p>
+        <p style="font-weight: bold;">$29,999</p>
+        <p>Per person on twin sharing</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+
+      <div>
+        <button class="button1">View Packages</button>
+        <button class="button1">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Kenya Package -->
+    <div class="div1">
+      <img src="image/ker1.jpg" alt="Kenya">
+      <h2>Munnar</h2>
+      <h3>Munnar Highlights</h3>
+      <p>1N Nairobi |1N Aberdares & Mt. Kenya | 1N Lake Nakuru National Park | 2N Masai Mara Game Reserve</p>
+      
+      <hr>
+      <div class="icon">
+        <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+        <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+        <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+        <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
+      </div>
+      <hr>
+
+      <div class="price-info">
+        <p><strong>Starting from:</strong></p>
+        <p style="text-decoration: line-through;">$34,999</p>
+        <p style="font-weight: bold;">$29,999</p>
+        <p>Per person on twin sharing</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+
+      <div>
+        <button class="button1">View Packages</button>
+        <button class="button1">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Lake Nakuru Package -->
+    <div class="div1">
+      <img src="image/lake.jpg" alt="Lake Nakuru">
+      <h2>LAKE NAKURU</h2>
+      <h3>Classic Kenya</h3>
+      <p>1N Aberdare National Park | 1N Lake Nakuru National Park | 2N Masai Mara National Reserve | 1N Lake Naivasha | 2N Amboseli National Park</p>
+      
+      <hr>
+      <div class="icon">
+        <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+        <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+        <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+        <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
+      </div>
+      <hr>
+
+      <div class="price-info">
+        <p><strong>Starting from:</strong></p>
+        <p style="text-decoration: line-through;">$34,999</p>
+        <p style="font-weight: bold;">$29,999</p>
+        <p>Per person on twin sharing</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+
+      <div>
+        <button class="button1">View Packages</button>
+        <button class="button1">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Page Button -->
+  <a href="htmlvisiting2.html">
+    <button class="button1" style="width: 200px; height: 70px;">Next Page <i class="fa-solid fa-arrow-right"></i></button>
+  </a>
+</div>
           <footer class="nav1">
-            <center>
+            <div class="footer-container">
               <div class="footer">
-                <i class="fa-solid fa-plane img2"></i>
-                <h1>enjoy your vacation</h1> 
-              
+                <img src="image/travel.avif" alt="" height="80px" width="100px" class="img">
+                <h1>Enjoy Your Vacation</h1>
               </div>
-          <div class="footer">
-            <h5 style="color: gray;  font-size: 17px;">ABOUT</h5>
-            
-             <a href="" class="a1"><li>contact us</li></a>
-             <a href=""  class="a1"><li>about us</li></a> 
-              <a href=""  class="a1"><li>careers</li></a>
-             <a href=""  class="a1"><li>press</li></a> 
-              <a href=""  class="a1"><li>flipkart stories</li></a>
           
-          </div>
-          <div class="footer">
-            <h5  style="color: gray;  font-size: 17px;">HELPING</h5>
-            
-              <a href=""  class="a1"><li>payment</li></a>
-              <a href=""  class="a1"><li>shipping</li></a>
-              <a href=""  class="a1"><li>returns</li></a>
-              <a href=""  class="a1"><li>cancellation</li></a>
-              <a href=""  class="a1"><li>FAQ</li></a>
-            
-          </div>
-          <div class="footer">
-            <h5  style="color: gray; margin-top: 15px;  font-size: 17px;">ADDRESS</h5>
-            <P>hunter tourist Private Limited,<br>
-
-              Buildings Alyssa, Begonia & <br>
-              
-              Clove Embassy Tech Village, <br>
-              
-              Bengaluru, 560103,<br>
-              
-              Karnataka, India</P>
-
-          </div>
-          <div class="footer">
-            <h5  style="color: gray; font-size: 17px;">SOCIAL MEDIA</h5>
-            <li><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp; <a href=""  class="a1">tiwtter</li></a>
-            <li><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">instagram</li></a>
-            <li><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">facebook</li></a>
-            <li><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="a1">youtube</li></a>
-            <li><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">whatsapp</li></a>
-          </div>
-        </div>
-      </center>
-        </footer>
-        <hr>
-        <div class="rate">
-          <img src="image/travel.avif" alt="" height="80px" width="100px" class="img" style="margin-left: 250px;">
-          <p style="margin:40px; font-family: Arial, Helvetica, sans-serif;">MAIL US : huntertourist@gmail.com</p>
-          <p style="margin:40px; font-family: Arial, Helvetica, sans-serif;">@copyright 2023 powered by HUNTERDEVELOPER</p>
-          <h3></h3>
-        </div>
+              <div class="footer">
+                <h5>ABOUT</h5>
+                <a href="" class="a1"><li>Contact Us</li></a>
+                <a href="" class="a1"><li>About Us</li></a>
+                <a href="" class="a1"><li>Careers</li></a>
+                <a href="" class="a1"><li>Press</li></a>
+                <a href="" class="a1"><li>Flipkart Stories</li></a>
+              </div>
+          
+              <div class="footer">
+                <h5>HELPING</h5>
+                <a href="" class="a1"><li>Payment</li></a>
+                <a href="" class="a1"><li>Shipping</li></a>
+                <a href="" class="a1"><li>Returns</li></a>
+                <a href="" class="a1"><li>Cancellation</li></a>
+                <a href="" class="a1"><li>FAQ</li></a>
+              </div>
+          
+              <div class="footer">
+                <h5>ADDRESS</h5>
+                <p>
+                  Hunter Tourist Private Limited,<br>
+                  Buildings Alyssa, Begonia & <br>
+                  Clove Embassy Tech Village,<br>
+                  Bengaluru, 560103,<br>
+                  Karnataka, India
+                </p>
+              </div>
+          
+              <div class="footer">
+                <h5>SOCIAL MEDIA</h5>
+                <ul style="margin-left: 80px;">
+                  <li><i class="fa-brands fa-x-twitter"></i> <a href="" class="a1">Twitter</a></li>
+                  <li><i class="fa-brands fa-instagram"></i> <a href="" class="a1">Instagram</a></li>
+                  <li><i class="fa-brands fa-facebook"></i> <a href="" class="a1">Facebook</a></li>
+                  <li><i class="fa-brands fa-youtube"></i> <a href="" class="a1">YouTube</a></li>
+                  <li><i class="fa-brands fa-whatsapp"></i> <a href="" class="a1">WhatsApp</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        
         
     </body>
 </html>

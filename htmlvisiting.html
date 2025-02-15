@@ -21,44 +21,302 @@
       padding-top: 10px;
       margin-left: 20px;
     }
-    nav{
-      background-color: black;
-      color: white;
-      height: 80px;
-      position: fixed;
-      width:100%;
-    }
 
-    .img ,.lists,.list-item ,.heading{
-      display: inline-block;
-    }
-    .lists{
-      
-      margin-left: 700px;
-      margin-top: -24px;
-      
-    }
-    .list-item{   
-      margin-right:10px;
-      font-size: 20px;
-    }
-    .a1{
-      color: white;
-      text-decoration: none;
-    }
-    .img{
-      margin-top: 10px;
-      border-radius: 5px;
-      padding-left:5px;
-      vertical-align: bottom;
-      
-    }
-    /* .bg1{
-          background-image: url("image/4.jpg");
-          height: 200vh;
-          background-size: cover;
-    } */
-    .div1{
+    /* /nav :start */
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 30px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ff9800;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: ruby;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+/* end nav */
+          /* .bg1{
+            background-image: url("image/4.jpg");
+            background-size: cover;
+            height: 120vh;
+          } */
+          
+               /* footer department */
+               .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  width: 20%;
+  margin: 10px;
+}
+
+.footer h5 {
+  color: gray;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer p, .footer li {
+  font-size: 14px;
+  list-style: none;
+  color: white;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: lightgray;
+}
+
+/* Social Media Icons */
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bottom Rate Section */
+.rate {
+  text-align: center;
+  padding: 10px;
+  background: #111;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 80%;
+    text-align: center;
+  }
+
+  .footer ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
+
+  .rate p {
+    font-size: 12px;
+  }
+}
+/* \end{code} */
+   /* card department */
+   /* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.bg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Flex container for travel packages */
+.travel-container {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+/* Individual package box */
+.div1 {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.div1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Package Features */
+.icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.icon p {
+  font-size: 14px;
+}
+
+/* Pricing Section */
+.price-info {
+  text-align: left;
+  padding: 10px;
+}
+
+.price-info p {
+  margin: 5px 0;
+}
+
+/* Buttons */
+.button1 {
+  background: #635f5a;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 48%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button1:hover {
+  background: #e68900;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .div1 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div1 {
+    width: 90%;
+  }
+
+  .icon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button1 {
+    width: 100%;
+    
+  }
+}
+/* end card */
+    /* .div1{
       height:750px;
       width: 400px;
       background-color: white;
@@ -114,133 +372,174 @@
         .icon1{
           margin-left: 10px;
         }
-       
+        */
     </style>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
       <body>
-        <nav>
-            <img src="image/travel.avif" alt="" height="50" width="50" class="img" style="border-radius: 15px;">
-            <h1 class="heading">HUNTER TOURIST</h1>
-            <ul class="lists">
-              <li class="list-item"><span><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;&nbsp;<a href="htmllogin1.html" class="a1">LOGIN</a></span></li>
-              <li class="list-item"><i class="fa-solid fa-person"></i>&nbsp;&nbsp;&nbsp;<a href='htmlabout.html' class="a1">ABOUT US</a></li>
-              <li class="list-item"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;<a href="htmlcontact.html" class="a1">CONTACT US</a></li>
-              <li class="list-item"><i class="fa-solid fa-house" style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="index.html" class="a1">BACK TO HOME</a></li>
-          </ul>
-      </nav>
-      <div class="bg1" id="section1">
-       
-        <center>
-          <div style="display: flex;">
-        <div class="div1">
-          <center>
-              <img src="image/south africa.jpg" alt="taj mahal" height="250px" width="400px" class="">
-               <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> SOUTH AFRICA</h2></center><br><br>
-               <h2>Best of South Africa with Mauritius GD</h2><br>
-               <P class="p">1N Johannesburg | 1N Sun City | 1N Mabula Game Reserve | 3N Mossel Bay| 4N Cape Town | 3N Mauritius
-              </P><br><br>
-              
-            </center>
-            <div style="margin-top: -30px;">
-            <hr>
-            <div style="display: flex;" class="icon">
-              <i class="fa-solid fa-hotel icon1"></i>
-              <p style="margin-left: 4px;">HOTEL</p>
-              <i class="fa-solid fa-binoculars icon1 "></i>
-              <p style="margin-left: 4px;">SITESEEING</p>
-              <i class="fa-solid fa-car icon1"></i>
-              <p style="margin-left: 4px;">TRANFER</p>
-              <i class="fa-solid fa-bowl-food icon1"></i>
-              <p style="margin-left: 4px;">MEALS</p>
-            </div>
-            <br>
-              <hr>
-              <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-              <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-              <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-              <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-              <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-               <br><hr>
-               <div style="display: flex;">
-                <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-                <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
-              </div>
-           </div>  
-           </div>  
-           <div class="div1">
-            <center>
-              <img src="image/africa1.jpg" alt="new york city" height="250px" width="400px" class="">
-               <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">KENYA</h2></center><br><br>
-               <h2>Kenyan Highlights</h2><br>
-               <P class="p">1N Nairobi |1N Aberdares &Mt. Kenya | 1N Lake Nakuru National Park | 2N Masai Mara Game Reserve
-              </P><br> <br>
-              
-            </center>
-            <div style="margin-top: 0;">
-            <hr>
-            <div style="display: flex;" class="icon">
-              <i class="fa-solid fa-hotel icon1"></i>
-              <p style="margin-left: 4px;">HOTEL</p>
-              <i class="fa-solid fa-binoculars icon1 "></i>
-              <p style="margin-left: 4px;">SITESEEING</p>
-              <i class="fa-solid fa-car icon1"></i>
-              <p style="margin-left: 4px;">TRANFER</p>
-              <i class="fa-solid fa-bowl-food icon1"></i>
-              <p style="margin-left: 4px;">MEALS</p>
-            </div>
-            <br>
-              <hr>
-              <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-              <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-              <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-              <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-              <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-               <br><hr>
-               <div style="display: flex;">
-              <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-              <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
-            </div>
-           </div> 
+            <nav class="navbar">
+          <div class="nav-left">
+            <img src="image/travel.avif" alt="Logo" class="nav-logo">
+            <h1 class="nav-title">HUNTER TOURIST</h1>
           </div>
-           <div class="div1">
-            <center>
-              <img src="image/lake.jpg" alt="great wall of chaina" height="250px" width="400px" class="">
-               <center><h2 style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">LAKE NAKURU</h2></center><br><br>
-               <h2>Classic Kenya</h2><br>
-               <P class="p">1N Aberdare National Park | 1N Lake Nakuru National Park | 2N Masai Mara National Reserve | 1N Lake Naivasha | 2N Amboseli National Park </P><br><br>
-                <br><br>
+          
+          <ul class="nav-menu">
+            <li class="nav-item"><i class="fa-solid fa-right-to-bracket"></i><a href="htmllogin1.html">LOGIN</a></li>
+            <li class="nav-item"><i class="fa-solid fa-person"></i><a href="htmlabout.html">ABOUT US</a></li>
+            <li class="nav-item"><i class="fa-solid fa-house"></i><a href="index.html">HOME</a></li>
+            <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="htmlcontact.html">CONTACT US</a></li>
+          </ul>
+        
+          <!-- Mobile Menu Button -->
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="bg1">
+          <div class="travel-container">
+            <!-- South Africa Package -->
+            <div class="div1">
+              <img src="image/south africa.jpg" alt="South Africa">
+              <h2>SOUTH AFRICA</h2>
+              <h3>Best of South Africa with Mauritius GD</h3>
+              <p>1N Johannesburg | 1N Sun City | 1N Mabula Game Reserve | 3N Mossel Bay | 4N Cape Town | 3N Mauritius</p>
               
-            </center>
-            <div style="margin-top: -50px;">
-            <hr>
-            <div style="display: flex;" class="icon">
-              <i class="fa-solid fa-hotel icon1"></i>
-              <p style="margin-left: 4px;">HOTEL</p>
-              <i class="fa-solid fa-binoculars icon1 "></i>
-              <p style="margin-left: 4px;">SITESEEING</p>
-              <i class="fa-solid fa-car icon1"></i>
-              <p style="margin-left: 4px;">TRANFER</p>
-              <i class="fa-solid fa-bowl-food icon1"></i>
-              <p style="margin-left: 4px;">MEALS</p>
-            </div>
-            <br>
               <hr>
-              <p style="margin-left:-250px ; font-weight: 1000; font-size: 20px;">starting from </p>
-              <p style="text-decoration: line-through; margin-left: -310px;" class="">$34,999</p>
-              <P style="margin-left:-300px ; font-weight: 800; font-size: 20px;">$29,999</P>
-              <p  style="margin-left:-190px ;">per person on twin sharing</p><br>
-              <p style="font-size: 20px;">Rating - <i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-              <br> <hr>
-              <div style="display: flex;">
-                <button class="button1"><i class="fa-brands fa-product-hunt "></i>&nbsp;&nbsp;&nbsp;View packages</button>
-                <button class=" button1 "><i class="fa-solid fa-ticket "></i>&nbsp;&nbsp;&nbsp;Book Now</button>
+              <div class="icon">
+                <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+                <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+                <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+                <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
               </div>
-           </div> 
-           </div>
-          </div> 
-          <a href="htmlvisiting2.html"><button class="button1">next page<i class="fa-solid fa-arrow-right"></i></button></a>
-        </center>
+              <hr>
+        
+              <div class="price-info">
+                <p><strong>Starting from:</strong></p>
+                <p style="text-decoration: line-through;">$34,999</p>
+                <p style="font-weight: bold;">$29,999</p>
+                <p>Per person on twin sharing</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+              </div>
+        
+              <div>
+                <button class="button1">View Packages</button>
+                <button class="button1">Book Now</button>
+              </div>
+            </div>
+        
+            <!-- Kenya Package -->
+            <div class="div1">
+              <img src="image/africa1.jpg" alt="Kenya">
+              <h2>KENYA</h2>
+              <h3>Kenyan Highlights</h3>
+              <p>1N Nairobi |1N Aberdares & Mt. Kenya | 1N Lake Nakuru National Park | 2N Masai Mara Game Reserve</p>
+              
+              <hr>
+              <div class="icon">
+                <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+                <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+                <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+                <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
+              </div>
+              <hr>
+        
+              <div class="price-info">
+                <p><strong>Starting from:</strong></p>
+                <p style="text-decoration: line-through;">$34,999</p>
+                <p style="font-weight: bold;">$29,999</p>
+                <p>Per person on twin sharing</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+              </div>
+        
+              <div>
+                <button class="button1">View Packages</button>
+                <button class="button1">Book Now</button>
+              </div>
+            </div>
+        
+            <!-- Lake Nakuru Package -->
+            <div class="div1">
+              <img src="image/lake.jpg" alt="Lake Nakuru">
+              <h2>LAKE NAKURU</h2>
+              <h3>Classic Kenya</h3>
+              <p>1N Aberdare National Park | 1N Lake Nakuru National Park | 2N Masai Mara National Reserve | 1N Lake Naivasha | 2N Amboseli National Park</p>
+              
+              <hr>
+              <div class="icon">
+                <i class="fa-solid fa-hotel"></i> <p>HOTEL</p>
+                <i class="fa-solid fa-binoculars"></i> <p>SIGHTSEEING</p>
+                <i class="fa-solid fa-car"></i> <p>TRANSFER</p>
+                <i class="fa-solid fa-bowl-food"></i> <p>MEALS</p>
+              </div>
+              <hr>
+        
+              <div class="price-info">
+                <p><strong>Starting from:</strong></p>
+                <p style="text-decoration: line-through;">$34,999</p>
+                <p style="font-weight: bold;">$29,999</p>
+                <p>Per person on twin sharing</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+              </div>
+        
+              <div>
+                <button class="button1">View Packages</button>
+                <button class="button1">Book Now</button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Next Page Button -->
+          <a href="htmlvisiting2.html">
+            <button class="button1" style="width: 200px; height: 70px;">Next Page <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
+        </div>
+        
+      <footer class="nav1">
+        <div class="footer-container">
+          <div class="footer">
+            <img src="image/travel.avif" alt="" height="80px" width="100px" class="img" style="border-radius: 60px;">
+            <h1>Enjoy Your Vacation</h1>
+          </div>
       
-      </div>
+          <div class="footer">
+            <h5>ABOUT</h5>
+            <a href="" class="a1"><li>Contact Us</li></a>
+            <a href="" class="a1"><li>About Us</li></a>
+            <a href="" class="a1"><li>Careers</li></a>
+            <a href="" class="a1"><li>Press</li></a>
+            <a href="" class="a1"><li>Flipkart Stories</li></a>
+          </div>
+      
+          <div class="footer">
+            <h5>HELPING</h5>
+            <a href="" class="a1"><li>Payment</li></a>
+            <a href="" class="a1"><li>Shipping</li></a>
+            <a href="" class="a1"><li>Returns</li></a>
+            <a href="" class="a1"><li>Cancellation</li></a>
+            <a href="" class="a1"><li>FAQ</li></a>
+          </div>
+      
+          <div class="footer">
+            <h5>ADDRESS</h5>
+            <p>
+              Hunter Tourist Private Limited,<br>
+              Buildings Alyssa, Begonia & <br>
+              Clove Embassy Tech Village,<br>
+              Bengaluru, 560103,<br>
+              Karnataka, India
+            </p>
+          </div>
+      
+          <div class="footer">
+            <h5>SOCIAL MEDIA</h5>
+            <ul style="margin-left: 80px;">
+              <li><i class="fa-brands fa-x-twitter"></i> <a href="" class="a1">Twitter</a></li>
+              <li><i class="fa-brands fa-instagram"></i> <a href="" class="a1">Instagram</a></li>
+              <li><i class="fa-brands fa-facebook"></i> <a href="" class="a1">Facebook</a></li>
+              <li><i class="fa-brands fa-youtube"></i> <a href="" class="a1">YouTube</a></li>
+              <li><i class="fa-brands fa-whatsapp"></i> <a href="" class="a1">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </body>
 </html>

@@ -22,71 +22,274 @@
             padding-top: 10px;
             margin-left: 20px;
           }
-          nav{
-            background-color: rgb(6, 7, 8);
-            color: white;
-            height: 90px;
-            position: fixed;
-            width:100%;
-          }
+        
 
-          .img ,.lists,.list-item ,.heading{
-            display: inline-block;
-          }
-          .lists{
-            
-            margin-left: 650px;
-            margin-top: -24px;
-            
-          }
-          .list-item{   
-            margin-right:10px;
-            font-size: 20px;
-            vertical-align: bottom;
-          }
-          .a1{
-            color: white;
-            text-decoration: none;
-          }
-          .a2{
-            color: black;
-            text-decoration: none;
-          }
-          .img{
-            margin-top: 10px;
-            border-radius: 10px;
-            padding-left:5px;
-            vertical-align: bottom;
-          }
-          
-          
-          .pad{
-            margin-bottom: 20px;
-          }
-          .div{
-            padding: 30px;
-          }
-          .margin{
-            margin-left: 60px;
-          }
-          .nav1{
-            background-color: black;
-            color: white;
-            height: 200px;
-           
-          } 
-          .footer{
-            display: inline-block;
-            padding: 50px;
-            list-style-type: none;
-            text-align: justify;
-          }
+          /* nav bar2 */
+             /* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 30px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ff9800;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: ruby;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+/* end nav */
+          /* General Footer Styling */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  width: 20%;
+  margin: 10px;
+}
+
+.footer h5 {
+  color: gray;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer p, .footer li {
+  font-size: 14px;
+  list-style: none;
+  color: white;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: lightgray;
+}
+
+/* Social Media Icons */
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bottom Rate Section */
+.rate {
+  text-align: center;
+  padding: 10px;
+  background: #111;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 80%;
+    text-align: center;
+  }
+
+  .footer ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
+
+  .rate p {
+    font-size: 12px;
+  }
+}
+
           /* .bg1{
             background-image: url("image/4.jpg");
             background-size: cover;
             height: 120vh;
           } */
-          
+/* card department */
+   /* Tourist Section Styling */
+.tourist-section {
+  text-align: center;
+  margin: 30px 0;
+  color: white;
+}
+
+.tourist-section h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tourist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.tourist {
+  text-align: center;
+  width: 150px;
+}
+
+.tourist img {
+  height: 100px;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.tourist img:hover {
+  transform: scale(1.1);
+}
+
+.tourist p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tourist-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tourist-container {
+    gap: 15px;
+  }
+  .tourist {
+    width: 130px;
+  }
+  .tourist-section h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tourist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tourist {
+    width: 100%;
+  }
+  .tourist img {
+    width: 80px;
+    height: 80px;
+  }
+  .tourist-section h2 {
+    font-size: 25px;
+  }
+}
+/* \end{code} */
           .button1{
             height: 60px;
             width: 250px;
@@ -118,13 +321,7 @@
           .button2:hover{
             background-color: rgb(61, 58, 58);
           }
-          .rate{
-            color: white;
-            background-color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 100px;
-            display: flex;
-          }
+          
           .discount{
             height: 200px;
             width: 200px;
@@ -148,83 +345,30 @@
             margin-bottom: 10px;
           }
 
-@media (max-width: 1200px) {
-    .lists {
-        margin-left: 300px; /* Adjust the margin for smaller screens */
-    }
-    .button1, .button2 {
-        width: 200px; /* Make buttons narrower */
-    }
-}
-
-@media (max-width: 992px) {
-    nav {
-        flex-direction: column; /* Stack items vertically */
-        height: 100px; /* Allow height to adjust */
-        
-    }
-    .lists {
-        margin-left:0; /* Reset margin */
-        margin-top: 10px; /* Add some top margin */
-    }
-    .img {
-        height: 30px; /* Smaller logo */
-        width: auto; /* Maintain aspect ratio */
-    }
-    .heading {
-        font-size: 30px; /* Adjust heading size */
-    }
-}
-
-@media (max-width: 768px) {
-    .list-item {
-        font-size: 18px; /* Reduce font size for list items */
-        margin-left: 300px;
-    }
-    .p {
-        font-size: 18px; /* Reduce paragraph size */
-    }
-    .footer {
-        padding: 20px; /* Reduce footer padding */
-    }
-    .img2 {
-        font-size: 50px; /* Adjust icon size */
-    }
-    .button1, .button2 {
-        width: 100%; /* Full width buttons */
-        margin-top: 10px; /* Adjust margin */
-    }
-}
-
-@media (max-width: 576px) {
-    .heading {
-        font-size: 25px; /* Further reduce heading size */
-    }
-    .button1, .button2 {
-        font-size: 20px; /* Adjust button font size */
-    }
-    .footer {
-        font-size: 14px; /* Reduce footer text size */
-    }
-}
-         
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
         
-      <nav>
-        <img src="image/travel.avif" alt="" height="40" width="50" class="img">
-        <h1 class="heading">HUNTER TOURIST</h1>
-      
-        <ul class="lists">
-            <li class="list-item"><span> <i class="fa-solid fa-right-to-bracket" style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmllogin1.html" class="a1">LOGIN</a></span></li>
-            <li class="list-item"><i class="fa-solid fa-person"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlabout.html" class="a1">ABOUT US</a></li>
-            <li class="list-item"><i class="fa-solid fa-globe"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlvisiting.html" class="a1">TOP PLACES</a></li>
-            <li class="list-item"><i class="fa-solid fa-phone"style="margin-left: 5px;"></i>&nbsp;&nbsp;&nbsp;<a href="htmlcontact.html" class="a1">CONTACT US</a></li>
+      <nav class="navbar">
+        <div class="nav-left">
+          <img src="image/travel.avif" alt="Logo" class="nav-logo">
+          <h1 class="nav-title">HUNTER TOURIST</h1>
+        </div>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><i class="fa-solid fa-right-to-bracket"></i><a href="htmllogin1.html">LOGIN</a></li>
+          <li class="nav-item"><i class="fa-solid fa-person"></i><a href="htmlabout.html">ABOUT US</a></li>
+          <li class="nav-item"><i class="fa-solid fa-globe"></i><a href="htmlvisiting.html">TOP PLACES</a></li>
+          <li class="nav-item"><i class="fa-solid fa-phone"></i><a href="htmlcontact.html">CONTACT US</a></li>
         </ul>
-    
-  </nav>
+      
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      
         <div class="bg1">
           <br><br><br><br>
           <br>
@@ -238,135 +382,92 @@
                  <br><br>
                 <br><br>
                </center>
-               <center>
-                <p style="color:white; text-align: center; font-size: 40PX; font-family: A rial, Helvetica, sans-serif; font-weight: 800; margin-top: 30px;"><i class="fa-solid fa-icons " style="color: rgb(251, 253, 255);"></i>&nbsp;&nbsp;&nbsp;FAMOUS TOURIST ATTRACTION&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-icons" style="color: rgb(247, 247, 250);"></i></p>
-                <br>
-               <div style="display: flex; margin-bottom: 20px; flex-wrap: wrap;" class="p" >
-                <div style="margin-left: 130px;">
-                  <a href="lakshadweep.html" class="a2">
-                  <img src="image/lakshadweep.svg" alt="" height="100px" width="100px">
-                  <p>LAKSHADWEEP
-                   </p></a>
+               <div class="tourist-section">
+                <h2><i class="fa-solid fa-icons"></i> FAMOUS TOURIST ATTRACTIONS <i class="fa-solid fa-icons"></i></h2>
+              
+                <div class="tourist-container">
+                  <div class="tourist">
+                    <a href="lakshadweep.html"><img src="image/lakshadweep.svg"  alt="Lakshadweep"><p>LAKSHADWEEP</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="andaman.html"><img src="image/andaman-new.png" style="height: 100px; width: 100px;" alt="Andaman"><p>ANDAMAN</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="kashmir.html"><img src="image/kashmir.svg" style="height: 100px; width: 100px;" alt="Kashmir"><p>KASHMIR</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="jaipur.html"><img src="image/jaipur.svg" alt="Jaipur"><p>JAIPUR</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="bangalore.html"><img src="image/bangalore.svg" alt="Bangalore"><p>BANGALORE</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="paris.html"><img src="image/paris.svg" alt="Paris"><p>PARIS</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="leh.html"><img src="image/leh.svg" alt="Leh"><p>LEH</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="bali.html"><img src="image/bali-indonesia.svg" alt="Bali"><p>BALI</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="dubai.html"><img src="image/dubai.svg" alt="Dubai"><p>DUBAI</p></a>
+                  </div>
+                  <div class="tourist">
+                    <a href="kerala.html"><img src="image/kerala.svg" alt="Kerala"><p>KERALA</p></a>
+                  </div>
                 </div>
-                <div style="margin-left: 130px;">
-                  <a href="andaman.html" class="a2">
-                  <img src="image/andaman-new.png" alt="" height="100px" width="100px">
-                  <p>ANDAMAN
-                   </p></a>
-                </div>
-                <div style="margin-left: 130px;">
-                  <a href="kashmir.html" class="a2">
-                  <img src="image/kashmir.svg" alt="" height="100px" width="100px">
-                  <p>KASHMIR
-                   </p></a>
-                </div>
-                <div style="margin-left: 130px;">
-                  <a href="jaipur.html" class="a2">
-                  <img src="image/jaipur.svg" alt="" height="100px" width="100px">
-                  <p>JAIPUR
-                   </p></a>
-                </div>
-                <div style="margin-left: 130px;">
-                  <a href="bangalore.html" class="a2">
-                  <img src="image/bangalore.svg" alt="" height="100px" width="100px">
-                  <p>BANGALORE
-                   </p></a>
-                </div>
-               </div>
-              </center>
-              <center>
-                <div style="display: flex; margin-bottom: 20px; flex-wrap: wrap;">
-                 <div style="margin-left: 150px;">
-                   <a href="paris.html" class="a2">
-                   <img src="image/paris.svg" alt="" height="100px" width="100px">
-                   <p>PARIS
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 150px;">
-                   <a href="leh.html" class="a2">
-                   <img src="image/leh.svg" alt="" height="100px" width="100px">
-                   <p>LEH
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 150px;">
-                   <a href="bali.html" class="a2">
-                   <img src="image/bali-indonesia.svg" alt="" height="100px" width="100px">
-                   <p>BALI
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 130px;">
-                   <a href="dubai.html" class="a2">
-                   <img src="image/dubai.svg" alt="" height="100px" width="100px">
-                   <p>DUBAI
-                    </p></a>
-                 </div>
-                 <div style="margin-left: 130px;">
-                   <a href="kerala.html" class="a2">
-                   <img src="image/kerala.svg" alt="" height="100px" width="100px">
-                   <p>KERALA
-                    </p></a>
-                 </div>
-                </div>
-               </center>
+              </div>
+              
           </div>
           <footer class="nav1">
-            <center>
+            <div class="footer-container">
               <div class="footer">
-                <i class="fa-solid fa-plane img2"></i>
-                <h1>enjoy your vacation</h1> 
-              
+                <img src="image/travel.avif" alt="" height="80px" width="100px" class="img">
+                <h1>Enjoy Your Vacation</h1>
               </div>
-          <div class="footer">
-            <h5 style="color: gray;  font-size: 17px;">ABOUT</h5>
-            
-             <a href="" class="a1"><li>contact us</li></a>
-             <a href=""  class="a1"><li>about us</li></a> 
-              <a href=""  class="a1"><li>careers</li></a>
-             <a href=""  class="a1"><li>press</li></a> 
-              <a href=""  class="a1"><li>flipkart stories</li></a>
           
-          </div>
-          <div class="footer">
-            <h5  style="color: gray;  font-size: 17px;">HELPING</h5>
-            
-              <a href=""  class="a1"><li>payment</li></a>
-              <a href=""  class="a1"><li>shipping</li></a>
-              <a href=""  class="a1"><li>returns</li></a>
-              <a href=""  class="a1"><li>cancellation</li></a>
-              <a href=""  class="a1"><li>FAQ</li></a>
-            
-          </div>
-          <div class="footer">
-            <h5  style="color: gray; margin-top: 15px;  font-size: 17px;">ADDRESS</h5>
-            <P>hunter tourist Private Limited,<br>
-
-              Buildings Alyssa, Begonia & <br>
-              
-              Clove Embassy Tech Village, <br>
-              
-              Bengaluru, 560103,<br>
-              
-              Karnataka, India</P>
-
-          </div>
-          <div class="footer">
-            <h5  style="color: gray; font-size: 17px;">SOCIAL MEDIA</h5>
-            <li><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp; <a href=""  class="a1">tiwtter</li></a>
-            <li><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">instagram</li></a>
-            <li><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">facebook</li></a>
-            <li><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="a1">youtube</li></a>
-            <li><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""  class="a1">whatsapp</li></a>
-          </div>
-        </div>
-      </center>
-        </footer>
-        <hr>
-        <div class="rate">
-          <img src="image/travel.avif" alt="" height="80px" width="100px" class="img" style="margin-left: 250px;">
-          <p style="margin:40px; font-family: Arial, Helvetica, sans-serif;">MAIL US : huntertourist@gmail.com</p>
-          <p style="margin:40px; font-family: Arial, Helvetica, sans-serif;">@copyright 2023 powered by HUNTERDEVELOPER</p>
-          <h3></h3>
-        </div>
+              <div class="footer">
+                <h5>ABOUT</h5>
+                <a href="" class="a1"><li>Contact Us</li></a>
+                <a href="" class="a1"><li>About Us</li></a>
+                <a href="" class="a1"><li>Careers</li></a>
+                <a href="" class="a1"><li>Press</li></a>
+                <a href="" class="a1"><li>Flipkart Stories</li></a>
+              </div>
+          
+              <div class="footer">
+                <h5>HELPING</h5>
+                <a href="" class="a1"><li>Payment</li></a>
+                <a href="" class="a1"><li>Shipping</li></a>
+                <a href="" class="a1"><li>Returns</li></a>
+                <a href="" class="a1"><li>Cancellation</li></a>
+                <a href="" class="a1"><li>FAQ</li></a>
+              </div>
+          
+              <div class="footer">
+                <h5>ADDRESS</h5>
+                <p>
+                  Hunter Tourist Private Limited,<br>
+                  Buildings Alyssa, Begonia & <br>
+                  Clove Embassy Tech Village,<br>
+                  Bengaluru, 560103,<br>
+                  Karnataka, India
+                </p>
+              </div>
+          
+              <div class="footer">
+                <h5>SOCIAL MEDIA</h5>
+                <ul style="margin-left: 80px;">
+                  <li><i class="fa-brands fa-x-twitter"></i> <a href="" class="a1">Twitter</a></li>
+                  <li><i class="fa-brands fa-instagram"></i> <a href="" class="a1">Instagram</a></li>
+                  <li><i class="fa-brands fa-facebook"></i> <a href="" class="a1">Facebook</a></li>
+                  <li><i class="fa-brands fa-youtube"></i> <a href="" class="a1">YouTube</a></li>
+                  <li><i class="fa-brands fa-whatsapp"></i> <a href="" class="a1">WhatsApp</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         
     </body>
 </html>
